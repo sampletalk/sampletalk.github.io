@@ -7,7 +7,7 @@
 	<META NAME="AUTHOR" CONTENT="Andrew">
 	<META NAME="CREATED" CONTENT="20060930;21450000">
 	<META NAME="CHANGEDBY" CONTENT="AG ">
-	<META NAME="CHANGED" CONTENT="20220513;19313891">
+	<META NAME="CHANGED" CONTENT="20220513;20380301">
 	<STYLE TYPE="text/css">
 	<!--
 		@page { margin-left: 1in; margin-right: 1in; margin-top: 0.79in; margin-bottom: 0.79in }
@@ -109,24 +109,25 @@ is a description of the AI language Sampletalk and of the
 corresponding programming technology. </FONT>
 </P>
 <P CLASS="western" ALIGN=LEFT STYLE="text-indent: 0.5in"><FONT SIZE=3>Using
-Sampletalk, you can transform a set of sample texts into a working
+Sampletalk, one can transform a set of sample texts into a working
 program, which employs <I>regularities</I>, contained in the texts,
 and behaves with other texts according to thus developed
-<I>understanding</I> of your texts. The sample texts are
-unrestricted. They may contain natural language descriptions of some
-data, linguistic rules, biological code sequences, rules for
-combining the data, symbolic math expressions, complex data examples
-in any text form etc.</FONT></P>
+<I>understanding</I> of the texts. The sample texts are unrestricted.
+They may contain natural language descriptions of some data,
+linguistic rules, biological code sequences, rules for combining the
+data, symbolic math expressions, complex data examples in any text
+form, etc.</FONT></P>
 <P CLASS="western" ALIGN=LEFT><FONT SIZE=3>	The running of a
-Sampletalk program resembles matching of objects in a human brain.
-The program elements (samples), and the data being processed, should
-have some similarities, which are employed for driving the process. </FONT>
+Sampletalk program resembles a matching of objects in a human brain.
+Program elements (we call them <I>samples</I>), and the data being
+processed, should have some similarities, which are employed for
+driving the process. </FONT>
 </P>
 <P CLASS="western" ALIGN=LEFT><FONT SIZE=3>	In [1] and [2] we prove
 that any algorithm can be created in this way. Rather than encoding
 the algorithm one can <I>compose</I> it from some sample data without
-programming in a common sense. where data structures and the order of
-operations should be specified. </FONT>
+programming in a common sense, where data structures and the order of
+operations are to be specified. </FONT>
 </P>
 <P CLASS="western" ALIGN=LEFT><BR><BR>
 </P>
@@ -135,14 +136,14 @@ operations should be specified. </FONT>
 of the language and technology</FONT></FONT></H1>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><FONT SIZE=3>Sampletalk
 language is characterized by a trivial syntax and by an extreme
-similarity of the program code elements to some samples of the data
+similarity of the program code elements to demo samples of the data
 being processed.</FONT></P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><BR><BR>
 </P>
-<TABLE WIDTH=638 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
-	<COL WIDTH=622>
+<TABLE WIDTH=625 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=609>
 	<TR>
-		<TD WIDTH=622 HEIGHT=48 VALIGN=TOP BGCOLOR="#f3f3f3">
+		<TD WIDTH=609 HEIGHT=48 VALIGN=TOP BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="background: #ffffff; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; widows: 0; orphans: 0; text-decoration: none; page-break-after: auto">
 			<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>The
 			following Sampletalk program example demonstrates a small
@@ -154,9 +155,9 @@ being processed.</FONT></P>
 		</TD>
 	</TR>
 	<TR>
-		<TD WIDTH=622 VALIGN=TOP BGCOLOR="#f3f3f3">
+		<TD WIDTH=609 VALIGN=TOP BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><FONT SIZE=3><FONT COLOR="#0000ff"><B>where
-			is new york?..				</B></FONT>% Goal (query)<FONT COLOR="#0000ff"><B>
+			is new york?..				</B></FONT>% Goal (query); this is a comment<FONT COLOR="#0000ff"><B>
 			<BR>where is X? in Y :- X is situated in Y..	</B></FONT>%
 			Inference rules<BR><FONT COLOR="#0000ff"><B>who is X? Y :- X is
 			Y.. <BR>new york is situated in america..		</B></FONT>% Facts in a
@@ -168,7 +169,7 @@ being processed.</FONT></P>
 		</TD>
 	</TR>
 	<TR>
-		<TD WIDTH=622 VALIGN=TOP BGCOLOR="#f3f3f3">
+		<TD WIDTH=609 VALIGN=TOP BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><FONT SIZE=3>Note
 			that words <FONT COLOR="#0000ff"><B>where</B></FONT>, <FONT COLOR="#0000ff"><B>is</B></FONT>,<FONT COLOR="#0000ff"><B>
 			situated</B></FONT>,<FONT COLOR="#0000ff"><B> who</B></FONT>, the
@@ -177,10 +178,10 @@ being processed.</FONT></P>
 			usage</I>. You can consider the symbol <FONT COLOR="#0000ff"><B>:-</B></FONT>
 			as a separator between the procedure head and the procedure body,
 			or as an <B>if</B> condition: the head holds if the body holds.
-			Here you see 2 heads with bodies and 7 heads without bodies (they
-			are called facts, they always hold). Although this program
-			consists only of 9 clauses: 2 <I>rules</I>, 7 <I>facts</I>, you
-			can ask a number of questions (queries), e.g.:<FONT COLOR="#0000ff"><B>
+			Here you can find 2 heads with bodies (inference rules) and 7
+			heads without bodies (they are called facts; they always hold).
+			Although this program consists only of 9 clauses: 2 <I>rules</I>,
+			7 <I>facts</I>, you can ask a number of questions (queries), e.g.:<FONT COLOR="#0000ff"><B>
 			<BR>where is new york?</B></FONT> (the result will be <FONT COLOR="#0000ff"><B>where
 			is new york? in america</B></FONT>)<BR><FONT COLOR="#0000ff"><B>who
 			is julia?</B></FONT><FONT COLOR="#0000ff"> </FONT>(the result will
@@ -198,7 +199,7 @@ being processed.</FONT></P>
 		</TD>
 	</TR>
 	<TR>
-		<TD WIDTH=622 VALIGN=TOP BGCOLOR="#f3f3f3">
+		<TD WIDTH=609 VALIGN=TOP BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><FONT SIZE=3>So,
 			the goal is <I>expanded</I> according to the inference rules and
 			facts. You can easily enrich this knowledge for processing other
@@ -208,8 +209,6 @@ being processed.</FONT></P>
 		</TD>
 	</TR>
 </TABLE>
-<P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><BR><BR>
-</P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><FONT SIZE=3>Symbol
 <FONT COLOR="#0000ff"><B>:-</B></FONT> between a clause head and a
 clause body and the double-dot <FONT COLOR="#0000ff"><B>..</B></FONT>
@@ -218,18 +217,28 @@ between the program elements controls the algorithm. These elements
 may contain <I>variables</I>, like <FONT COLOR="#0000ff"><B>X</B></FONT>
 and <FONT COLOR="#0000ff"><B>Y</B></FONT> in the example above.<FONT COLOR="#0000ff"><B>
 </B></FONT>You can imagine programming in Sampletalk as extracting
-the reasoning rules from natural sources. Consider the rule <FONT COLOR="#0000ff"><B>were
-is X? in Y :- X is situated in Y. </B></FONT>This is rephrasing of
-the following reasoning: <FONT COLOR="#0000ff"><B>I know that X is
-situated in Y. Then, if asked &quot;where is X?&quot;, I should
-answer &quot;in Y&quot;</B></FONT>. This reasoning, in its turn, can
-be considered as a a generalization of the more specific reasoning: <FONT COLOR="#0000ff"><B>I
+the reasoning rules from natural sources. Consider the rule </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY><FONT COLOR="#0000ff"><FONT SIZE=3><B>were
+is X? in Y :- X is situated in Y. </B></FONT></FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3>This is a rephrasing of
+the following reasoning: </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3><FONT COLOR="#0000ff"><B>I
+know that X is situated in Y. Then, if asked &quot;where is X?&quot;,
+I should answer &quot;in Y&quot;</B></FONT>. </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3>This reasoning, in its
+turn, can be considered as a generalization of a more specific
+reasoning:</FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3><FONT COLOR="#0000ff"><B>I
 know that Paris is situated in France. Then, if asked, &quot;where is
 Paris?&quot; I should answer &quot;in France&quot;</B></FONT>.<FONT COLOR="#0000ff"><B>
 </B></FONT></FONT>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><FONT SIZE=3><FONT COLOR="#000000">Sampletalk
-language is related to AI, Linguistics, </FONT>Mathematics, and, more
+language is related to AI, Linguistics, </FONT>Mathematics, and more
 specifically, to Logic Programming, Program Synthesis, Corpus
 Linguistics, Machine Translation. It raises some interesting
 technological and philosophical questions and provides a natural way
@@ -248,8 +257,9 @@ expressions: natural language descriptions, formulas, code lines
 etc., so the programming is surprisingly straightforward: <FONT COLOR="#ff00ff"><I><B>build
 a program immediately from data processing examples</B></I></FONT><I><B>.</B></I>
 I believe that this is an ideal instrument for creation of
-interpreters, compilers and natural language processing software; see
-numerous working examples below. </FONT>
+interpreters, compilers, and natural language processing software;
+see numerous working examples below and in our experimental version
+of Sampletlak interpreter. </FONT>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><FONT SIZE=3>Below
 Sampletalk program examples are given. Some theoretic analysis of the
@@ -274,7 +284,6 @@ as</FONT></P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.06in"><FONT SIZE=3><B>	</B><FONT COLOR="#0000ff"><I><B>head..
 </B></I></FONT></FONT>
 </P>
-<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.06in"><FONT SIZE=3>	</FONT></P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.06in"><FONT SIZE=3>Here
 <FONT COLOR="#0000ff"><I><B>head</B></I></FONT> and<FONT COLOR="#0000ff"><I>
 </I></FONT><FONT COLOR="#0000ff"><I><B>sub-goal</B></I></FONT> (which
@@ -293,26 +302,26 @@ match the program goal with the first clause head for which this
 matching is possible (starting from the top of the program excluding
 the goal itself). Then the interpreter attempts to do the same with
 the sequence of sub-goals of the clause being found and so on, until
-matching all of them, if any. Note that this is a recursive
-definition.</FONT></P>
+matching all of them, if this is possible. Note that this is a
+recursive definition.</FONT></P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.06in"><FONT SIZE=3>	The
-process of <I>matching</I> samples consists in an attempt to make
-them equal by a global replacing of <I>variable names</I> (the words
-starting from upper-case alphabetic letters and separated from other
-words by spaces or the underlines) with suitable constructions. If
-this is impossible for a current clause, the performance of this
+process of <I>matching</I> of the samples consists in an attempt to
+make them equal by a global replacing of <I>variable names</I> (the
+words starting from upper-case alphabetic letters and separated from
+other words by spaces or the underlines) with suitable constructions.
+If this is impossible for a current clause, the performance of this
 clause fails and the interpreter looks for other possibilities to
 resolve the goal. </FONT>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.06in"><FONT SIZE=3>	The
 <I>result</I> of the program performance is the program goal.
-However, the variables in the program goal will have values obtained
-during the performance. We can get all possible results by choosing a
-special option for the interpreter. Like in Prolog language, if some
-matching is impossible, the interpreter tries to find another clause,
-whose head matches the current sub-goal, then to match all its
-sub-goals, and so on. If a performance of some sub-goal is
-impossible, the interpreter backtracks and considers other
+However, the variables in the program goal will have values, which
+are obtained during the performance. We can get all possible results
+by choosing a special option for the interpreter. Like in Prolog
+language, if some matching is impossible, the interpreter tries to
+find another clause, whose head matches the current sub-goal, then to
+match all its sub-goals, and so on. If a performance of some sub-goal
+is impossible, the interpreter backtracks and considers other
 possibilities for matching previous sub-goals. Unlike programming in
 Prolog language, we are not interested in the <I>side effects</I> of
 the program performance. The instantiated goal itself is the main
@@ -320,7 +329,7 @@ result of the program performance. </FONT>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.06in"><FONT SIZE=3>	Square
 brackets <FONT COLOR="#0000ff"><B>[ ]</B></FONT> in the samples are
-used in order to define the nested substrings. They constrain
+used in order to define the nested substrings. They constrain the
 matching. Nesting structures of matching samples must match. Comments
 (line fragments, which do not affect the program performance) are
 designated by the % sign at the beginning. In this version of the
@@ -335,8 +344,9 @@ are scanned as the key constructions of the language. </FONT>
 as modification of Prolog language:</B></FONT></FONT><FONT SIZE=2>
 </FONT>The main feature of Sampletalk is a <I>strong similarity of
 the constructions for writing algorithms to the data being processed</I>.
-For this purpose we sometimes use a special notation with underlines
-rather than the brackets for designation of the nested words. </FONT>
+For this purpose we sometimes use our special notation with
+underlines rather than the brackets for designation of the nested
+words. </FONT>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><FONT SIZE=3>As
 the modification of Prolog, Sampletalk can be defined as follows. The
@@ -345,7 +355,7 @@ such as [A1, A2, &hellip;, Ak], where each Ai is either a basic type
 or a variable, are designated as A1 A2 .... Ak. (without the
 quotation marks defining strings in Prolog). These terms are called
 <I>samples</I>; their sub-lists (list segments in any nesting level)
-are called sub-samples. The uppercase single character constants and
+are called sub-samples. The uppercase single-character constants and
 several constants, used also for the language syntax ([, ], {, },
 double dot, double comma, neck-symbol :-) are designated in a special
 way. The nested samples are marked either by brackets or by
@@ -373,12 +383,12 @@ below (examples for number list permutations and sorting). </FONT>
 only predicate in Sampletalk is a 1-place predicate with an empty
 name. The predicates are written in clauses without parentheses,
 simply by writing their arguments, separated by the neck-symbol <B>:-</B>
-and the double commas, and terminated by the double dot. </FONT>
+and the double-commas, and terminated by the double-dot. </FONT>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><FONT SIZE=3>While
 matching two samples, a variable can match not only an element of the
 opposite sample (like in Prolog). It can match a sub-sample (list
-segment) formed by a sequence of such elements. Since there may be
+segment) formed by a sequence of such elements. Since there can be
 many possibilities of matching two samples, we introduce the
 following rule, which affects the backtracking: <I>the more left an
 occurrence of a variable in a sample, the less is the size of a
@@ -389,20 +399,20 @@ are various possibilities for matching text samples, and sometimes we
 meet unexpected and even unwanted results. For example, a sample <B>a
 / b / c</B> can match a sample <B>A / B</B> in two ways: 1) <B>A = a,
 B = b / c</B>; 2) <B>A = a / b, B = c</B>. However, you may find
-useful the exhaustion of all the possibilities for matching. For
+useful the exhaustion of all such possibilities for matching. For
 instance, matching samples like <B>begin [spoke] [rim] [hub] [wheel]
 [frame] end</B> and  <B>C [A] B</B> enables us to process the
 fragments of samples as lists of words (see demo program
 PARTSIN2.SAM):</FONT></P>
 <P CLASS="western" ALIGN=LEFT><BR><BR>
 </P>
-<TABLE WIDTH=590 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
-	<COL WIDTH=94>
+<TABLE WIDTH=575 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=79>
 	<COL WIDTH=106>
 	<COL WIDTH=200>
-	<COL WIDTH=133>
+	<COL WIDTH=132>
 	<TR VALIGN=TOP>
-		<TD WIDTH=94 BGCOLOR="#f3f3f3">
+		<TD WIDTH=79 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=CENTER><FONT SIZE=3><B>begin</B></FONT></P>
 		</TD>
 		<TD WIDTH=106 BGCOLOR="#f3f3f3">
@@ -413,13 +423,13 @@ PARTSIN2.SAM):</FONT></P>
 			</B><U><B>hub</B></U><B> </B><U><B>wheel</B></U><B> </B><U><B>frame</B></U><B>
 			end</B></FONT></P>
 		</TD>
-		<TD WIDTH=133 BGCOLOR="#f3f3f3">
+		<TD WIDTH=132 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><FONT SIZE=3><I>(1-st
 			attempt)</I></FONT></P>
 		</TD>
 	</TR>
 	<TR VALIGN=TOP>
-		<TD WIDTH=94 BGCOLOR="#f3f3f3">
+		<TD WIDTH=79 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=CENTER><FONT SIZE=3><B>- - C- -</B></FONT></P>
 		</TD>
 		<TD WIDTH=106 BGCOLOR="#f3f3f3">
@@ -430,7 +440,7 @@ PARTSIN2.SAM):</FONT></P>
 			<P CLASS="western" ALIGN=CENTER> <FONT SIZE=3><B>- - - - - - - - -
 			B - - - - - - - - -</B></FONT></P>
 		</TD>
-		<TD WIDTH=133 BGCOLOR="#f3f3f3">
+		<TD WIDTH=132 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><BR>
 			</P>
 		</TD>
@@ -438,32 +448,32 @@ PARTSIN2.SAM):</FONT></P>
 </TABLE>
 <P CLASS="western" ALIGN=LEFT><BR><BR>
 </P>
-<TABLE WIDTH=590 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
-	<COL WIDTH=133>
-	<COL WIDTH=98>
+<TABLE WIDTH=576 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=118>
+	<COL WIDTH=97>
 	<COL WIDTH=170>
-	<COL WIDTH=133>
+	<COL WIDTH=132>
 	<TR VALIGN=TOP>
-		<TD WIDTH=133 BGCOLOR="#f3f3f3">
+		<TD WIDTH=118 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=CENTER><FONT SIZE=3><B>begin </B><U><B>spoke</B></U></FONT></P>
 		</TD>
-		<TD WIDTH=98 BGCOLOR="#f3f3f3">
+		<TD WIDTH=97 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=CENTER><FONT SIZE=3><U><B>rim</B></U></FONT></P>
 		</TD>
 		<TD WIDTH=170 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=CENTER><FONT SIZE=3><U><B>hub</B></U><B>
 			</B><U><B>wheel</B></U><B> </B><U><B>frame</B></U><B> end</B></FONT></P>
 		</TD>
-		<TD WIDTH=133 BGCOLOR="#f3f3f3">
+		<TD WIDTH=132 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><FONT SIZE=3><I>(2-nd
 			attempt</I></FONT></P>
 		</TD>
 	</TR>
 	<TR VALIGN=TOP>
-		<TD WIDTH=133 BGCOLOR="#f3f3f3">
+		<TD WIDTH=118 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=CENTER> <FONT SIZE=3><B>- - - -C - - - -</B></FONT></P>
 		</TD>
-		<TD WIDTH=98 BGCOLOR="#f3f3f3">
+		<TD WIDTH=97 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=CENTER> <FONT SIZE=3><B>- </B><U><B>A </B></U><B>-
 			</B></FONT>
 			</P>
@@ -472,56 +482,56 @@ PARTSIN2.SAM):</FONT></P>
 			<P CLASS="western" ALIGN=CENTER><FONT SIZE=3><B>- - - - - - - - B
 			- - - - - - - -</B></FONT></P>
 		</TD>
-		<TD WIDTH=133 BGCOLOR="#f3f3f3">
+		<TD WIDTH=132 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><BR>
 			</P>
 		</TD>
 	</TR>
 </TABLE>
 <P CLASS="western" ALIGN=LEFT> <FONT SIZE=3><B>...</B></FONT></P>
-<TABLE WIDTH=590 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
-	<COL WIDTH=286>
-	<COL WIDTH=70>
+<TABLE WIDTH=575 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=270>
+	<COL WIDTH=71>
 	<COL WIDTH=44>
-	<COL WIDTH=133>
+	<COL WIDTH=132>
 	<TR VALIGN=TOP>
-		<TD WIDTH=286 BGCOLOR="#f3f3f3">
+		<TD WIDTH=270 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=CENTER><FONT SIZE=3><B>begin </B><U><B>spoke</B></U><B>
 			</B><U><B>rim</B></U><B> </B><U><B>hub</B></U><B> </B><U><B>wheel</B></U></FONT></P>
 		</TD>
-		<TD WIDTH=70 BGCOLOR="#f3f3f3">
+		<TD WIDTH=71 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=CENTER><FONT SIZE=3><U><B>frame</B></U></FONT></P>
 		</TD>
 		<TD WIDTH=44 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=CENTER><FONT SIZE=3><B>end</B></FONT></P>
 		</TD>
-		<TD WIDTH=133 BGCOLOR="#f3f3f3">
+		<TD WIDTH=132 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><FONT SIZE=3><I>(last
 			attempt)</I></FONT></P>
 		</TD>
 	</TR>
 	<TR VALIGN=TOP>
-		<TD WIDTH=286 BGCOLOR="#f3f3f3">
+		<TD WIDTH=270 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=CENTER><FONT SIZE=3><B>- - - - - - - - -
 			- C - - - - - - - - - -</B></FONT></P>
 		</TD>
-		<TD WIDTH=70 BGCOLOR="#f3f3f3">
+		<TD WIDTH=71 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=CENTER><FONT SIZE=3><B>- - </B><U><B>A</B></U><B>-
 			-</B></FONT></P>
 		</TD>
 		<TD WIDTH=44 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=CENTER><FONT SIZE=3><B>- B -</B></FONT></P>
 		</TD>
-		<TD WIDTH=133 BGCOLOR="#f3f3f3">
+		<TD WIDTH=132 BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><BR>
 			</P>
 		</TD>
 	</TR>
 </TABLE>
-<P CLASS="western" ALIGN=CENTER><FONT SIZE=3>Matching samples<B> C </B><U><B>A</B></U><B>
-B </B>and<B> begin </B><U><B>spoke</B></U><B> </B><U><B>rim</B></U><B>
-</B><U><B>hub</B></U><B> </B><U><B>wheel</B></U><B> </B><U><B>frame</B></U><B>
-end</B></FONT></P>
+<P CLASS="western" ALIGN=CENTER><FONT SIZE=3>Matching of samples<B> C
+</B><U><B>A</B></U><B> B </B>and<B> begin </B><U><B>spoke</B></U><B>
+</B><U><B>rim</B></U><B> </B><U><B>hub</B></U><B> </B><U><B>wheel</B></U><B>
+</B><U><B>frame</B></U><B> end</B></FONT></P>
 <P CLASS="western" ALIGN=JUSTIFY><BR><BR>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3>Variable <B>A</B> can
@@ -534,10 +544,10 @@ wishes and imagination limit the expressing power of a language with
 such trivial syntax and so rich possibilities for the interaction of
 the language constructions. For example, a <I>number sort</I> program
 may contain a fragment <B>A{N}{M}B ==&gt; A{M}{N}B :- {M&lt;N}</B>
-(see the sort examples below); a program for reducing homogeneous
-items in an analytic expression may contain a fragment <B>A+M*X+N*X+B
----&gt; A+L*X+B :- L=M+N</B> with respective clauses involving the
-constants <B>&lt;, +, = </B>and the concept of number.</FONT></P>
+(see sort examples below); a program for reducing homogeneous items
+in an analytic expression may contain a fragment <B>A+M*X+N*X+B ---&gt;
+A+L*X+B :- L=M+N</B> with respective clauses involving the constants
+<B>&lt;, +, = </B>and the concept of number.</FONT></P>
 <P CLASS="western" ALIGN=JUSTIFY><BR><BR>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3><FONT COLOR="#ff00ff"><FONT SIZE=4><B>Compiler
@@ -563,16 +573,16 @@ the process for the analysis and for debugging. Otherwise, the lines
 will be printed without stopping. </FONT>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><FONT SIZE=3>SENSITIVE
-MATCHING BACKTRACKING: the compiler will analyze (during the
-backtracking) all the possibilities for matching any current pair of
-samples. <I>This option does not have an analogy in Prolog language</I>.
-If the option is unchecked, then only one possibility for matching
-the current pair of samples is searched for. In case of backtracking
-(up to this point), the current sub-goal fails without considering
-other possible matching of the current samples.</FONT></P>
+MATCHING BACKTRACKING: during backtracking, the compiler will analyze
+all the possibilities for matching any current pair of samples. <I>This
+option does not have an analogy in Prolog language</I>. If the option
+is unchecked, then only one possibility for matching the current pair
+of samples is searched for. In case of backtracking, the current
+sub-goal fails without considering other possible matching of the
+current samples.</FONT></P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><FONT SIZE=3>FIND
 ALL (ONE) DECISIONS (toggle): the compiler considers, through the
-backtracking, all the possible results of program performance (i.e.
+backtracking, all possible results of a program performance (i.e.
 results of replacing bound variables in the program goal by their
 values). If the toggle is off, only one result will be searched for.</FONT></P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><FONT SIZE=3>WRITE
@@ -582,7 +592,7 @@ samples. If the program performance is successful, then only the
 resolved goal is printed. Otherwise, the information about every
 Sampletalk clause call is printed. This option is used for testing
 and debugging of Sampletalk programs. Another usage of this option is
-getting some explanation and a history of the program performance.</FONT></P>
+getting an explanation and a history of the program performance.</FONT></P>
 <H1 CLASS="western"><BR><BR>
 </H1>
 <H1 CLASS="western"><FONT COLOR="#ff00ff"><FONT SIZE=4 STYLE="font-size: 16pt">Sampletalk
@@ -594,29 +604,26 @@ Program Examples: </FONT></FONT>
 that you have plenty of facts like<FONT COLOR="#0000ff"><B> jack eats
 apples in the corridor</B></FONT>, represented in a natural language
 form, and would like to develop a question-answering system that
-allows a user to derive the consequences of these facts and to cause
-other actions, related to such reasoning (e.g. to qualify eating as a
-consumption). Sampletalk provides the simplest possible way for doing
-this. You will never need to make a separate parser, grammar,
+allows a user to derive consequences of such facts and to initiate
+other actions, related to such reasoning, e.g., to qualify eating as
+a consumption. Sampletalk provides the simplest possible way for
+doing this. You will never need to make a separate parser, grammar,
 semantic models, and reasoning modules. Everything is obtained via
-the universal concept of <B>matching text samples</B>, where the
-samples may contain variables, e.g. <FONT COLOR="#0000ff"><B>X
-</B></FONT>(standing for <FONT COLOR="#0000ff"><B>Jack</B></FONT> or
-somebody else, as in our example), <FONT COLOR="#0000ff"><B>A
+the <I>universal</I> concept of <I><SPAN STYLE="font-weight: normal">matching
+text samples</SPAN></I>, where the samples may contain variables,
+e.g. <FONT COLOR="#0000ff"><B>X </B></FONT>(standing for <FONT COLOR="#0000ff"><B>Jack</B></FONT>
+or somebody else, as in our example), <FONT COLOR="#0000ff"><B>A
 </B></FONT>(standing for verb <FONT COLOR="#0000ff"><B>eat</B></FONT>
 or for some other description of action), <FONT COLOR="#0000ff"><B>F</B></FONT>
 (standing for <FONT COLOR="#0000ff"><B>food</B></FONT> or for some
-other object) etc. </FONT>
-</P>
-<P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><FONT SIZE=3>In
-order to implement such a reasoning, all other knowledge-processing
-systems require much more complex <FONT COLOR="#000000">programming</FONT>.</FONT></P>
+other object) etc. In order to implement such reasoning, all other
+knowledge-processing systems require much more complex <FONT COLOR="#000000">programming</FONT>.</FONT></P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><BR><BR>
 </P>
-<TABLE WIDTH=638 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
-	<COL WIDTH=622>
+<TABLE WIDTH=625 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=609>
 	<TR>
-		<TD WIDTH=622 VALIGN=TOP BGCOLOR="#f3f3f3">
+		<TD WIDTH=609 VALIGN=TOP BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><FONT SIZE=3>%
 			Goal:<BR><FONT COLOR="#0000ff"><B>what does jack eat?..<BR></B></FONT>%
 			Knowledge base (inference rule with semantic patterns):<BR><FONT COLOR="#0000ff"><B>what
@@ -637,19 +644,22 @@ systems require much more complex <FONT COLOR="#000000">programming</FONT>.</FON
 <P CLASS="western" ALIGN=JUSTIFY><BR><BR>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3>The output (or, better,
-the response) of this program will be <FONT COLOR="#0000ff"><B>what
-does jack eat? apples. </B></FONT>On the way to derive this response,
+the answer) of this program will be <FONT COLOR="#0000ff"><B>what
+does jack eat? apples. </B></FONT>On the way to derive this answer
 the program will print intermediate results: <FONT COLOR="#0000ff"><B>consumption:
-eating, food: apples, place: the corridor. </B></FONT>A more precise
-representation of English syntax, semantics and morphology can be
-achieved in the same way: see the following examples.</FONT></P>
+eating, food: apples, place: the corridor. </B></FONT></FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3><FONT COLOR="#0000ff"><B>	</B></FONT>A
+more precise representation of English syntax, semantics and
+morphology can be achieved in the same way: see the following
+examples.</FONT></P>
 <P CLASS="western" ALIGN=JUSTIFY><BR><BR>
 </P>
 <H1 CLASS="western" ALIGN=JUSTIFY><A NAME="Abstraction of natural language reasoning"></A>
 <FONT COLOR="#ff00ff">Abstraction of natural language reasoning</FONT></H1>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><FONT SIZE=3>This
-program example demonstrates how we can obtain the inference rules
-immediately from the NL reasoning examples. Consider the following 3
+program example demonstrates how we can obtain inference rules
+immediately from NL reasoning examples. Consider the following 3
 obvious reasoning examples: </FONT>
 </P>
 <P CLASS="western" ALIGN=LEFT><FONT COLOR="#0000ff"><FONT SIZE=3><B>What
@@ -658,8 +668,8 @@ Socrates? Human (since person Socrates is Human); <BR>Where is Paris?
 In France (since object Paris is situated in France). </B></FONT></FONT>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3><FONT COLOR="#0000ff"><B><BR></B></FONT>In
-the program below, we simply replace specific object names with
-unique variable names in the form <FONT COLOR="#0000ff"><B>{</B></FONT>Something<FONT COLOR="#0000ff"><B>}</B></FONT>
+the program below we simply replace specific object names with unique
+variable names in the form <FONT COLOR="#0000ff"><B>{</B></FONT>Something<FONT COLOR="#0000ff"><B>}</B></FONT>
 (variable names in Sampletalk start from the upper-case letters) and
 obtain the rules, which are much more general. They provide
 additional reasoning like</FONT></P>
@@ -674,30 +684,32 @@ goals like the goals given below. The program is as simple as this: </FONT>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY><BR><BR>
 </P>
-<TABLE WIDTH=638 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
-	<COL WIDTH=622>
-	<TR>
-		<TD WIDTH=622 VALIGN=TOP BGCOLOR="#f3f3f3">
-			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><FONT SIZE=3>%
-			Possible program goals<FONT COLOR="#0000ff"><B> <BR>who is julia?
-			Function.. </B></FONT><BR><FONT COLOR="#0000ff"><B>where is new
-			york? in Place.. <BR>person Sombody is son of maria and
-			His_father.. <BR>person jack N is Relative of Somebody.. <BR>person
-			Son 2 is son of Y and X 1.. <BR>what is on a table? X.. <BR></B></FONT>%
-			Reasoning rules <BR><FONT COLOR="#0000ff"><B>what is on Roof? Bird
-			:- object Bird is situated on Roof.. </B></FONT><BR><FONT COLOR="#0000ff"><B>who
-			is Socrates? Human :- person Socrates is Human..<BR>where is
-			Paris? in France :- object Paris is situated in France..<BR></B></FONT>%
-			Factual knowledge <FONT COLOR="#0000ff"><B><BR>person joe is a son
-			of maria and peter.. </B></FONT><BR><FONT COLOR="#0000ff"><B>person
-			julia is a daughter of maria and peter.. <BR>person peter 2 is a
-			son of maria and peter 1.. <BR>person jack 2 is a son of julia and
-			jack 1.. <BR>object new york is situated in america.. <BR>object
-			st.petersburg is situated in russia.. <BR>object book is situated
-			on a table..</B></FONT></FONT></P>
-		</TD>
-	</TR>
-</TABLE>
+<DIV ALIGN=RIGHT>
+	<TABLE WIDTH=624 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=608>
+		<TR>
+			<TD WIDTH=608 VALIGN=TOP BGCOLOR="#f3f3f3">
+				<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><FONT SIZE=3>%
+				Possible program goals<FONT COLOR="#0000ff"><B> <BR>who is julia?
+				Function.. </B></FONT><BR><FONT COLOR="#0000ff"><B>where is new
+				york? in Place.. <BR>person Sombody is son of maria and
+				His_father.. <BR>person jack N is Relative of Somebody.. <BR>person
+				Son 2 is son of Y and X 1.. <BR>what is on a table? X.. <BR></B></FONT>%
+				Reasoning rules <BR><FONT COLOR="#0000ff"><B>what is on Roof?
+				Bird :- object Bird is situated on Roof.. </B></FONT><BR><FONT COLOR="#0000ff"><B>who
+				is Socrates? Human :- person Socrates is Human..<BR>where is
+				Paris? in France :- object Paris is situated in France..<BR></B></FONT>%
+				Factual knowledge <FONT COLOR="#0000ff"><B><BR>person joe is a
+				son of maria and peter.. </B></FONT><BR><FONT COLOR="#0000ff"><B>person
+				julia is a daughter of maria and peter.. <BR>person peter 2 is a
+				son of maria and peter 1.. <BR>person jack 2 is a son of julia
+				and jack 1.. <BR>object new york is situated in america.. <BR>object
+				st.petersburg is situated in russia.. <BR></B></FONT><FONT COLOR="#0000ff"><B>object
+				book is situated on a table..</B></FONT></FONT></P>
+			</TD>
+		</TR>
+	</TABLE>
+</DIV>
 <H1 CLASS="western"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">The
 outputs for the corresponding goals will be: </SPAN></FONT></FONT><FONT COLOR="#0000ff"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR>who
 is julia? a daughter of maria and peter.. <BR>where is new york? in
@@ -711,7 +723,7 @@ book.. <BR></FONT></FONT></FONT><BR><BR>
 <FONT SIZE=3><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">That
 is, inference </SPAN></SPAN></FONT></FONT></SPAN></FONT><FONT COLOR="#0000ff"><SPAN STYLE="text-decoration: none"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><B>where
 is Paris? in France :- object Paris is situated in France</B></SPAN></FONT></FONT></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
-, where capitalized words stand for the variables, is used for a
+, where the capitalized words stand for variables, is used for a
 generation of the inference </SPAN></SPAN></FONT></FONT></SPAN></FONT><FONT COLOR="#0000ff"><SPAN STYLE="text-decoration: none"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><B>where
 is new york? in america :- object new york is situated in america</B></SPAN></FONT></FONT></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">.</SPAN></SPAN></FONT></FONT></SPAN></FONT></FONT></P>
 <P CLASS="western" ALIGN=LEFT STYLE="background: #ffffff; border: none; padding: 0in; font-style: normal; font-weight: normal; line-height: 100%; page-break-inside: auto; widows: 0; orphans: 0; text-decoration: none; page-break-after: auto">
@@ -761,7 +773,7 @@ morphological tags.</FONT></P>
 			<P CLASS="western" ALIGN=LEFT><FONT SIZE=3><FONT COLOR="#000000">%
 			Boundary condition for the last 2 words:</FONT><FONT COLOR="#0000ff"><B>
 			<BR>morphologic tagging for sentence [A B] is T1[A] T2[B]:-
-			<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;word
+			<BR></B></FONT><FONT COLOR="#0000ff"><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;word
 			A has morphologic tag T1 ,, <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;word
 			B has morphologic tag  T2.. </B></FONT></FONT>
 			</P>
@@ -775,14 +787,13 @@ morphological tags.</FONT></P>
 			</P>
 			<P CLASS="western" ALIGN=LEFT><FONT SIZE=3><FONT COLOR="#000000">%
 			Gramamar patterns:</FONT><FONT COLOR="#0000ff"><B>
-			<BR>noun[determiner[_] aj[_] noun[_]] 	is a grammar
-			pattern..	noun[determiner[_] noun[_]] 		is a grammar pattern..		  
-			 <BR>noun[aj[_] noun[_]] 				is a grammar pattern..		   
-			<BR></B></FONT><FONT COLOR="#0000ff"><B>sent[noun[_]
-			past_verb[_]]			is a grammar pattern..		    <BR>sent[noun[_] be[_]
-			aj[_]]			is a grammar pattern..	sent[pronoun[_] have_sg[_]
-			past_verb[_]] 	is a grammar pattern.. <BR></B></FONT><FONT COLOR="#0000ff"><B>sent[sent[_]
-			logic[_] sent[_]]			is a grammar pattern.. </B></FONT></FONT>
+			<BR>noun[determiner[_] aj[_] noun[_]] is a grammar pattern..		   
+			<BR>noun[determiner[_] noun[_]] is a grammar pattern..		   
+			<BR>noun[aj[_] noun[_]] is a grammar pattern..		    <BR>sent[noun[_]
+			past_verb[_]] is a grammar pattern..		    <BR>sent[noun[_] be[_]
+			aj[_]] is a grammar pattern.. <BR>sent[pronoun[_] have_sg[_]
+			past_verb[_]] is a grammar pattern.. <BR>sent[sent[_] logic[_]
+			sent[_]] is a grammar pattern.. </B></FONT></FONT>
 			</P>
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><FONT SIZE=3><FONT COLOR="#000000">%
 			Morphologic dictionary: <BR></FONT><FONT COLOR="#0000ff"><B>word
@@ -810,20 +821,20 @@ than what is immediately composed from linguistic terms like these? </FONT>
 Inventory</FONT></H1>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; background: #ffffff; border: none; padding: 0in; line-height: 100%; page-break-inside: auto; widows: 0; orphans: 0; page-break-after: auto">
 <FONT SIZE=3><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">This
-is a Sampletalk version of the classic Prolog program by Clocksin &amp;
+is a Sampletalk version of a classic Prolog program by Clocksin &amp;
 Mellish. Using a description of a bike, this program produces the
 list of all its basic parts. The main difference from the Prolog
-version is a natural language form: we don't have to use the specific
-Prolog syntax and can be as expressive in our NL expressions as we
-want. I even </SPAN></SPAN></FONT></FONT></SPAN></FONT>used an
+version is the natural language form: we don't have to use a specific
+Prolog syntax, and we can be as expressive in our NL expressions as
+we want. I even </SPAN></SPAN></FONT></FONT></SPAN></FONT>used an
 English<FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
-check speller for debugging this program!</SPAN></SPAN></FONT></FONT></SPAN></FONT></FONT></P>
+check speller for debugging this program.</SPAN></SPAN></FONT></FONT></SPAN></FONT></FONT></P>
 <P CLASS="western" ALIGN=LEFT><BR><BR>
 </P>
-<TABLE WIDTH=638 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
-	<COL WIDTH=622>
+<TABLE WIDTH=625 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=609>
 	<TR>
-		<TD WIDTH=622 VALIGN=TOP BGCOLOR="#f3f3f3">
+		<TD WIDTH=609 VALIGN=TOP BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><FONT SIZE=3>%
 			Goal (L stands for the list of basic parts of a bike, which is
 			being generated here)<FONT COLOR="#0000ff"><B> <BR>parts of [bike]
@@ -847,21 +858,22 @@ check speller for debugging this program!</SPAN></SPAN></FONT></FONT></SPAN></FO
 <P CLASS="western" ALIGN=LEFT><BR><BR>
 </P>
 <P CLASS="western" ALIGN=LEFT><FONT SIZE=3><FONT COLOR="#000000">As </FONT>a<FONT COLOR="#000000">
-result, this program will print </FONT><FONT COLOR="#0000ff"><B>parts
+result, this program will print </FONT></FONT>
+</P>
+<P CLASS="western" ALIGN=LEFT><FONT SIZE=3><FONT COLOR="#0000ff"><B>parts
 of [bike] are [spoke] [rim] [gears] [bolt] [nut] [spoke] [rim]
 [gears] [bolt] [nut] [rear frame] [fork] [handles]</B></FONT><FONT COLOR="#0000ff">.
 </FONT></FONT>
 </P>
 <P CLASS="western" ALIGN=LEFT STYLE="text-indent: 0.5in"><FONT SIZE=3>Such
-a program will never need detailed documentation. Since <FONT COLOR="#ff00ff"><I><B>text
+programs will never need a detailed documentation. Since <FONT COLOR="#ff00ff"><I><B>text
 matching</B></I></FONT> is the main programming concept, the reader
-of the program will always <I>see </I>the explanation of its parts in
-that parts themselves. As important, the universal concepts like
-<FONT COLOR="#0000ff"><B>contains</B></FONT>, <FONT COLOR="#0000ff"><B>is</B></FONT>,
-<FONT COLOR="#0000ff"><B>parts of</B></FONT>, as well as any kind of
-jargon language designations can be easily included into such a
-program along with the constraints and explanations how the
-corresponding objects behave.</FONT></P>
+of the program will always <I>see </I>the explanation in the program
+itself. As important, the universal concepts like <FONT COLOR="#0000ff"><B>contains</B></FONT>,
+<FONT COLOR="#0000ff"><B>is</B></FONT>, <FONT COLOR="#0000ff"><B>parts
+of</B></FONT>, as well as any kind of jargon language designations,
+can be easily included into the program, along with the constraints
+and explanations on how the corresponding objects should behave.</FONT></P>
 <H1 CLASS="western"><BR><BR>
 </H1>
 <H1 CLASS="western"><A NAME="Logic Formula Transformation (shifting quantifiers)"></A>
@@ -870,8 +882,8 @@ corresponding objects behave.</FONT></P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; background: #ffffff; border: none; padding: 0in; line-height: 100%; page-break-inside: auto; widows: 0; orphans: 0; page-break-after: auto">
 <FONT SIZE=3><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">The
 main clause of this program almost literally quotes a well-known
-formal rule from a student textbook for Mathematical Logic, along
-with the informal </SPAN></SPAN></FONT></FONT></SPAN></FONT>constraints
+formal rule from a </SPAN></SPAN></FONT></FONT></SPAN></FONT><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">student
+textbook for Mathematical Logic, along with the informal </SPAN></SPAN></FONT></FONT></SPAN></FONT>constraints
 on how<FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
 to apply this rule. See </SPAN></SPAN></FONT></FONT></SPAN></FONT>also
 the next<FONT COLOR="#000000"><SPAN STYLE="text-decoration: none"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">
@@ -935,7 +947,7 @@ program is the same as the previous one, but its goal is &quot;opposite&quot;
 			x10)([a(x0,y)] \/ [b(x10,t)])..<BR></B></FONT>% Knowledge base:<BR><FONT COLOR="#0000ff"><B>(Q
 			X)[F] \/ (Q X)[H] --&gt; (Q X)(Q Z)([F] \/ [G]) :- <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X
 			is variable,, <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Z
-			is variable,, <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not(F
+			is variable,, <BR></B></FONT><FONT COLOR="#0000ff"><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not(F
 			contains Z),, <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Z/X)[H]=[G]..</B></FONT>
 			<BR><FONT COLOR="#0000ff"><B>x0 is variable..<BR>X10 is variable
 			:- X0 is variable..<BR>AXB contains X..<BR>(Y/X)[AXM]=[AYN] :-
@@ -1367,10 +1379,11 @@ half (the goal is the 1-st line; the half will replace variable <FONT COLOR="#00
 more, notice that notations </FONT><FONT COLOR="#0000ff"><B>[</B></FONT><FONT COLOR="#0000ff"><I>something</I></FONT><FONT COLOR="#0000ff"><B>]-&gt;</B></FONT><FONT COLOR="#0000ff"><I>something</I></FONT><FONT COLOR="#000000">
 and </FONT><FONT COLOR="#0000ff"><B>[</B></FONT><FONT COLOR="#0000ff"><I>something</I></FONT><FONT COLOR="#0000ff"><B>]</B></FONT><FONT COLOR="#0000ff">=</FONT><FONT COLOR="#0000ff"><B>[</B></FONT><FONT COLOR="#0000ff"><I>something</I></FONT><FONT COLOR="#0000ff"><B>],
 </B></FONT><FONT COLOR="#000000">which express a transformation of
-entities and equality of entities correspondingly, are </FONT><FONT COLOR="#000000"><I>defined
-</I></FONT><FONT COLOR="#000000">just here. You can use any other
-expressive (for you) notation, and the program will do the same,
-provided all your notations match each other in a similar way.<BR></FONT></FONT><BR><BR>
+entities and equality of entities </FONT><FONT COLOR="#000000">correspondingly,
+are </FONT><FONT COLOR="#000000"><I>defined </I></FONT><FONT COLOR="#000000">just
+here. You can use any other expressive (for you) notation, and the
+program will do the same, provided all your notations match each
+other in a similar way.<BR></FONT></FONT><BR><BR>
 </P>
 <H1 CLASS="western"><A NAME="List permutations"></A><FONT COLOR="#ff00ff">List
 permutations</FONT></H1>
