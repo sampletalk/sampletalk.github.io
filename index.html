@@ -7,7 +7,7 @@
 	<META NAME="AUTHOR" CONTENT="Andrew">
 	<META NAME="CREATED" CONTENT="20060930;21450000">
 	<META NAME="CHANGEDBY" CONTENT="AG ">
-	<META NAME="CHANGED" CONTENT="20220515;6214797">
+	<META NAME="CHANGED" CONTENT="20220516;11592198">
 	<STYLE TYPE="text/css">
 	<!--
 		@page { margin-left: 1in; margin-right: 1in; margin-top: 0.79in; margin-bottom: 0.79in }
@@ -126,7 +126,7 @@ processed, should have some similarities, which are employed for
 driving the process. </FONT>
 </P>
 <P CLASS="western" ALIGN=LEFT><FONT SIZE=3>	In [1] and [2] we prove
-that any algorithm can be created in this way. Rather than encoding
+that any algorithm can be created in this way. Rather than <I>encoding</I>
 the algorithm one can <I>compose</I> it from some sample data without
 programming in a common sense, where data structures and the order of
 operations are to be specified. </FONT>
@@ -145,12 +145,14 @@ being processed.</FONT></P>
 <TABLE WIDTH=625 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
 	<COL WIDTH=609>
 	<TR>
-		<TD WIDTH=609 HEIGHT=48 VALIGN=TOP BGCOLOR="#f3f3f3">
+		<TD WIDTH=609 HEIGHT=60 VALIGN=TOP BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="background: #ffffff; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; widows: 0; orphans: 0; text-decoration: none; page-break-after: auto">
 			<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>The
 			following Sampletalk program example demonstrates a small
 			knowledge base. All its facts, rules and queries are extracted
-			from English phrases:</FONT></FONT></FONT></P>
+			from English phrases. Note that only uncapitalized  English words
+			are used here; capital letters and the symbol <FONT COLOR="#000000">&ldquo;</FONT><FONT COLOR="#3333ff"><B>_</B></FONT><FONT COLOR="#000000">&rdquo;</FONT>
+			stand for <I>variables.</I></FONT></FONT></FONT></P>
 			<P CLASS="western" ALIGN=LEFT STYLE="background: #ffffff; border: none; padding: 0in; font-style: normal; font-weight: normal; page-break-inside: auto; widows: 0; orphans: 0; text-decoration: none; page-break-after: auto">
 			<BR>
 			</P>
@@ -159,44 +161,46 @@ being processed.</FONT></P>
 	<TR>
 		<TD WIDTH=609 VALIGN=TOP BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><FONT SIZE=3><FONT COLOR="#0000ff"><B>where
-			is new york?..				</B></FONT>% Goal (query); this is a comment<FONT COLOR="#0000ff"><B>
-			<BR>where is X? in Y :- X is situated in Y..	</B></FONT>%
-			Inference rules<BR><FONT COLOR="#0000ff"><B>who is X? Y :- X is
-			Y.. <BR>new york is situated in america..		</B></FONT>% Facts in a
-			natural language form<BR><FONT COLOR="#0000ff"><B>st. petersburg
-			is situated in russia..<BR>a book is situated on a table..<BR>joe
-			is son of maria and peter..<BR>julia is daughter of maria and
-			peter..<BR>peter 2 is son of maria and peter 1..<BR>jack 2 is son
-			of julia and jack 1..</B></FONT></FONT></P>
+			is new york?..				</B></FONT>% Goal (query)<FONT COLOR="#0000ff"><B><BR>where
+			is X? in Y :- X is situated in Y..	</B></FONT>% Inference
+			rules<BR><FONT COLOR="#0000ff"><B>who is X? Y :- X is Y.. <BR>new
+			york is situated in america..		</B></FONT>% Facts in a natural
+			language form<BR><FONT COLOR="#0000ff"><B>st. petersburg is
+			situated in russia..<BR>book is situated on table..<BR>joe is son
+			of maria and peter..<BR>nick is son of maria and peter..<BR>julia
+			is daughter of maria and peter..<BR>jack is son of julia and
+			nick..</B></FONT></FONT></P>
 		</TD>
 	</TR>
 	<TR>
 		<TD WIDTH=609 VALIGN=TOP BGCOLOR="#f3f3f3">
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><FONT SIZE=3>Note
 			that words <FONT COLOR="#0000ff"><B>where</B></FONT>, <FONT COLOR="#0000ff"><B>is</B></FONT>,<FONT COLOR="#0000ff"><B>
-			situated</B></FONT>,<FONT COLOR="#0000ff"><B> who</B></FONT>, the
-			numbers and the question signs are <I>not</I> key constructions of
-			the language. Their meaning is defined just here, <I>via their
-			usage</I>. You can consider the symbol <FONT COLOR="#0000ff"><B>:-</B></FONT>
-			as a separator between the procedure head and the procedure body,
-			or as an <B>if</B> condition: the head holds if the body holds.
-			Here you can find 2 heads with bodies (inference rules) and 7
-			heads without bodies (they are called facts; they always hold).
-			Although this program consists only of 9 clauses: 2 <I>rules</I>,
-			7 <I>facts</I>, you can ask a number of questions (queries), e.g.:<FONT COLOR="#0000ff"><B>
+			situated</B></FONT>,<FONT COLOR="#0000ff"><B> who</B></FONT> and
+			the question signs are <I>not</I> key constructions of the
+			language. Their meaning is defined just here, <I>via their usage</I>.
+			You can consider the symbol <FONT COLOR="#0000ff"><B>:-</B></FONT>
+			as a separator between a procedure head and a procedure body, or
+			as an <I><B>if</B></I> condition: the head holds if the body
+			holds. Here you can find 2 heads with bodies (inference rules) and
+			7 heads without bodies (they are called facts; they always hold).
+			Although this program consists only of 9 clauses, you can ask a
+			number of questions (queries), e.g.:<FONT COLOR="#0000ff"><B>
 			<BR>where is new york?</B></FONT> (the result will be <FONT COLOR="#0000ff"><B>where
 			is new york? in america</B></FONT>)<BR><FONT COLOR="#0000ff"><B>who
 			is julia?</B></FONT><FONT COLOR="#0000ff"> </FONT>(the result will
 			be <FONT COLOR="#0000ff"><B>who is julia?</B></FONT><FONT COLOR="#0000ff">
 			</FONT><FONT COLOR="#0000ff"><B>daughter of maria and peter</B></FONT>)<BR><FONT COLOR="#0000ff"><B>X
 			is son of maria and Y </B></FONT>(<FONT COLOR="#0000ff"><B>X</B></FONT>
-			will match <FONT COLOR="#0000ff"><B>joe</B></FONT>, then <FONT COLOR="#0000ff"><B>peter
-			2</B></FONT>)<BR><FONT COLOR="#0000ff"><B>Jack N is Y of Z</B></FONT>
-			(<FONT COLOR="#0000ff"><B>Y</B></FONT> will match <FONT COLOR="#0000ff"><B>son</B></FONT>,
-			Z - <FONT COLOR="#0000ff"><B>julia and jack 1</B></FONT>)<BR><FONT COLOR="#0000ff"><B>X
-			2 is son of Y and X 1</B></FONT><B> </B>(<FONT COLOR="#0000ff"><B>X</B></FONT>
-			will match <FONT COLOR="#0000ff"><B>peter</B></FONT>, then <FONT COLOR="#0000ff"><B>jack</B></FONT>).
-			</FONT>
+			will match <FONT COLOR="#0000ff"><B>joe</B></FONT>, then
+			<FONT COLOR="#0000ff"><B>nick</B></FONT>)<BR><FONT COLOR="#0000ff"><B>Jack
+			is Y of Z</B></FONT> (<FONT COLOR="#0000ff"><B>Y</B></FONT> will
+			match <FONT COLOR="#0000ff"><B>son</B></FONT>, <FONT COLOR="#0000ff"><B>Z</B></FONT>
+			- <FONT COLOR="#0000ff"><B>julia and nick</B></FONT>)<BR><FONT COLOR="#0000ff"><B>X
+			is son of </B></FONT><FONT COLOR="#0000ff"><B>_</B></FONT><B> </B>(<FONT COLOR="#0000ff"><B>X</B></FONT>
+			will match <FONT COLOR="#0000ff"><B>joe</B></FONT>, then <FONT COLOR="#0000ff"><B>nick</B></FONT><FONT COLOR="#000000"><SPAN STYLE="font-weight: normal">,</SPAN></FONT><FONT COLOR="#0000ff"><B>
+			</B></FONT><FONT COLOR="#000000"><SPAN STYLE="font-weight: normal">then</SPAN></FONT><FONT COLOR="#0000ff"><B>
+			jack</B></FONT>. </FONT>
 			</P>
 		</TD>
 	</TR>
@@ -205,8 +209,8 @@ being processed.</FONT></P>
 			<P CLASS="western" ALIGN=LEFT STYLE="margin-top: 0in"><FONT SIZE=3>So,
 			the goal is <I>expanded</I> according to the inference rules and
 			facts. You can easily enrich this knowledge for processing other
-			questions like <FONT COLOR="#0000ff"><B>what is on the table?</B></FONT>,
-			for introducing a desired syntax or semantic tags, for generating
+			questions like <FONT COLOR="#0000ff"><B>what is on table?</B></FONT>,
+			for introducing desired syntax or semantic tags, for generating
 			explanations etc.</FONT></P>
 		</TD>
 	</TR>
@@ -227,17 +231,24 @@ is X? in Y :- X is situated in Y. </B></FONT></FONT>
 <P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3>This is a rephrasing of
 the following reasoning: </FONT>
 </P>
-<P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3><FONT COLOR="#0000ff"><B>I
-know that X is situated in Y. Then, if asked &quot;where is X?&quot;,
-I should answer &quot;in Y&quot;</B></FONT>. </FONT>
+<P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3><FONT COLOR="#000000"><SPAN STYLE="font-weight: normal">I
+know that </SPAN></FONT><FONT COLOR="#0000ff"><B>X is situated in Y.
+</B></FONT><FONT COLOR="#000000"><SPAN STYLE="font-weight: normal">Then,
+if asked</SPAN></FONT><FONT COLOR="#0000ff"><B> &quot;where is X?&quot;,
+</B></FONT><FONT COLOR="#000000"><SPAN STYLE="font-weight: normal">I
+should answer</SPAN></FONT><FONT COLOR="#0000ff"><B> &quot;in Y&quot;</B></FONT>.
+</FONT>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3>This reasoning, in its
-turn, can be considered as a generalization of a more specific
-reasoning:</FONT></P>
-<P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3><FONT COLOR="#0000ff"><B>I
-know that Paris is situated in France. Then, if asked, &quot;where is
-Paris?&quot; I should answer &quot;in France&quot;</B></FONT>.<FONT COLOR="#0000ff"><B>
-</B></FONT></FONT>
+turn, can be considered as a generalization of the following, more
+specific reasoning:</FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY><FONT SIZE=3><FONT COLOR="#000000"><SPAN STYLE="font-weight: normal">I
+know that </SPAN></FONT><FONT COLOR="#0000ff"><B>Paris is situated in
+France. </B></FONT><FONT COLOR="#000000"><SPAN STYLE="font-weight: normal">Then,
+if asked </SPAN></FONT><FONT COLOR="#0000ff"><B>&quot;where is
+Paris?&quot; </B></FONT><FONT COLOR="#000000"><SPAN STYLE="font-weight: normal">I
+should answer</SPAN></FONT><FONT COLOR="#0000ff"><B> &quot;in
+France&quot;</B></FONT>.<FONT COLOR="#0000ff"><B> </B></FONT></FONT>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><FONT SIZE=3><FONT COLOR="#000000">Sampletalk
 language is related to AI, Linguistics, </FONT>Mathematics, and more
@@ -265,8 +276,8 @@ of Sampletlak interpreter. </FONT>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in"><FONT SIZE=3>Below
 Sampletalk program examples are given. Some theoretic analysis of the
-language and the technology is provided in papers [3] and [6]. You
-can skip the next 3 sections and proceed to examples.</FONT></P>
+language and the technology is provided in papers [1], [2], [4], [8].
+You can skip the next 3 sections and proceed to examples.</FONT></P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.06in"><BR><BR>
 </P>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.06in"><FONT SIZE=3><FONT COLOR="#ff00ff"><FONT SIZE=4><B>Syntax
@@ -367,7 +378,7 @@ underlining. </FONT>
 Prolog lists <B>['a', '+', 'b', '=', C], [A, '+', B, '=', C] </B>and<B>
 [['(','a', '+', 'b',')'], </B><B>'*', ['(',M, '+', N,')']]</B> are
 written as samples<B> a + b = C, A + B = C </B>and<B> [ ( a + b ) ] *
-[ ( M + N ) ]</B> respectively. Here <B>C, A, B, M, N</B> are
+[ ( M + </B><B>N ) ]</B> respectively. Here <B>C, A, B, M, N</B> are
 variable names. The samples in square brackets and the asterisk are
 elements of the last sample. Another notation for this sample is <U><B>(
 a + b )</B></U><B> * </B><U><B>( M + N )</B></U>. Samples <U><B>( a +
@@ -710,7 +721,7 @@ goals like the goals given below. The program is as simple as this:</FONT></P>
 		</TD>
 	</TR>
 </TABLE>
-<P CLASS="western" ALIGN=LEFT><BR><BR>
+<P CLASS="western" ALIGN=LEFT STYLE="font-weight: normal"><BR><BR>
 </P>
 <P CLASS="western" ALIGN=LEFT><FONT SIZE=3><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">The
 outputs for the corresponding goals will be: </SPAN></FONT></FONT><FONT COLOR="#0000ff"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR>who
@@ -1644,8 +1655,8 @@ consider the alternative models. </FONT>
 </P>
 <H1 CLASS="western"><BR><BR>
 </H1>
-<H1 CLASS="western"><A NAME="Conclusion about Sampletalk"></A><FONT COLOR="#ff00ff">Conclusion
-about </FONT><FONT COLOR="#ff00ff"><I>Sampletalk</I></FONT><FONT COLOR="#ff00ff"><I>
+<H1 CLASS="western"><A NAME="Conclusion about Sampletalk"></A><FONT COLOR="#ff00ff">Metaphoric
+</FONT><FONT COLOR="#ff00ff">Conclusion about </FONT><FONT COLOR="#ff00ff"><I>Sampletalk</I></FONT><FONT COLOR="#ff00ff"><I>
 </I></FONT><FONT COLOR="#ff00ff">programming technology</FONT></H1>
 <P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.06in"><FONT COLOR="#008000"><FONT SIZE=2><B>CAR
 DESK METAPHOR</B></FONT></FONT></P>
